@@ -2,7 +2,7 @@
 {
     public abstract class SaveLoader<TData, TService> : ISaveLoader
     {
-        void ISaveLoader.LoadGame(IGameRepository repository, IGameDIContainer context)
+        void ISaveLoader.LoadGame(IGameRepository repository, IServiceResolver context)
         {
             var service = context.Resolve<TService>();
             if (repository.TryGetData(out TData data))
@@ -15,7 +15,7 @@
             }
         }
 
-        void ISaveLoader.SaveGame(IGameRepository repository, IGameDIContainer context)
+        void ISaveLoader.SaveGame(IGameRepository repository, IServiceResolver context)
         {
             var service = context.Resolve<TService>();
             var data = this.ConvertToData(service);

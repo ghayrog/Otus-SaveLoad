@@ -9,11 +9,11 @@ namespace GameSaveLoad
     public sealed class SaveLoadManager : MonoBehaviour
     {
         private ISaveLoader[] _saveLoaders;
-        private IGameDIContainer _gameDIContainer;
+        private IServiceResolver _gameDIContainer;
         private IGameRepository _gameRepository;
 
         [Inject]
-        private void Construct(ISaveLoader[] saveLoaders, IGameDIContainer gameDIContainer, IGameRepository gameRepository)
+        private void Construct(ISaveLoader[] saveLoaders, IServiceResolver gameDIContainer, IGameRepository gameRepository)
         { 
             _saveLoaders = saveLoaders;
             _gameDIContainer = gameDIContainer;

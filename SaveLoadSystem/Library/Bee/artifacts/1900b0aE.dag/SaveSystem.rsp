@@ -350,15 +350,18 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Zenject.ref.dll"
-"Assets/Scripts/SaveSystem/EncryptedGameRepository.cs"
-"Assets/Scripts/SaveSystem/FileSystemGameRepository.cs"
-"Assets/Scripts/SaveSystem/Interfaces/IGameDIContainer.cs"
+"Assets/Scripts/SaveSystem/EncryptedGameStateLoader.cs"
+"Assets/Scripts/SaveSystem/FileSystemGameStateLoader.cs"
+"Assets/Scripts/SaveSystem/GameRepository.cs"
+"Assets/Scripts/SaveSystem/GameState.cs"
 "Assets/Scripts/SaveSystem/Interfaces/IGameRepository.cs"
+"Assets/Scripts/SaveSystem/Interfaces/IGameStateLoader.cs"
 "Assets/Scripts/SaveSystem/Interfaces/ISaveLoader.cs"
-"Assets/Scripts/SaveSystem/Interfaces/ZenjectAdapter.cs"
-"Assets/Scripts/SaveSystem/PlayerPrefsGameRepository.cs"
+"Assets/Scripts/SaveSystem/Interfaces/IServiceResolver.cs"
+"Assets/Scripts/SaveSystem/PlayerPrefsGameStateLoader.cs"
 "Assets/Scripts/SaveSystem/SaveLoader.cs"
 "Assets/Scripts/SaveSystem/StringCipher.cs"
+"Assets/Scripts/SaveSystem/ZenjectResolver.cs"
 -langversion:9.0
 
 /deterministic

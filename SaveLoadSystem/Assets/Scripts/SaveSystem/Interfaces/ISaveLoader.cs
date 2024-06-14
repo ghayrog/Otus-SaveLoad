@@ -2,8 +2,8 @@
 {
     public interface ISaveLoader
     { 
-        void SaveGame(IGameRepository gameRepository, IGameDIContainer context);
+        void SaveGame(IGameRepository gameRepository, IServiceResolver context);
 
-        void LoadGame(IGameRepository gameRepository, IGameDIContainer context);
+        void LoadGame(IGameRepository gameRepository, IServiceResolver context);
     }
 }

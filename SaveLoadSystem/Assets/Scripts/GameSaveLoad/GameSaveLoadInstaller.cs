@@ -13,8 +13,9 @@ namespace GameSaveLoad
         {
             Container.Bind<ISaveLoader>().To<UnitManagerSaveLoader>().AsSingle();
             Container.Bind<ISaveLoader>().To<ResourceServiceSaveLoader>().AsSingle();
-            Container.BindInterfacesAndSelfTo<EncryptedGameRepository>().AsSingle().NonLazy();
-            Container.BindInterfacesAndSelfTo<ZenjectAdapter>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<GameRepository>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<EncryptedGameStateLoader>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<ZenjectResolver>().AsSingle().NonLazy();
 
         }
     }
